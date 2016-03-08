@@ -1,0 +1,23 @@
+rafal@rafal-Aspire-5750G:~/Programowanie/ex4git/play$ cat foo.txt
+this is a first line of this text file.
+this is a second line of this text file.
+this is a third line of this text file.
+rafal@rafal-Aspire-5750G:~/Programowanie/ex4git/play$ git checkout foo.txt
+rafal@rafal-Aspire-5750G:~/Programowanie/ex4git/play$ cat foo.txt
+this is a first line of this text file.
+this is a second line of this text file.
+rafal@rafal-Aspire-5750G:~/Programowanie/ex4git/play$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   foo.txt
+
+rafal@rafal-Aspire-5750G:~/Programowanie/ex4git/play$ git checkout HEAD -- foo.txt
+rafal@rafal-Aspire-5750G:~/Programowanie/ex4git/play$ cat foo.txt
+this is a first line of this text file.
+
+rafal@rafal-Aspire-5750G:~/Programowanie/ex4git/play$ git status
+On branch master
+nothing to commit, working directory clean
+
